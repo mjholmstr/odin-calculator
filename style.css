@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family: monospace;
+}
+
+.calculator {
+    display: flex;
+    min-height: 95vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.calc-contain {
+    background-color: black;
+    border: 10px solid darkgray;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    gap: 2px;
+    color: white;
+}
+
+.output {
+    grid-column: 1 / -2;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.previousNumber {
+    display: flex;
+    height: 33%;
+    padding-bottom: 5px;
+    padding-top: 1px;
+    color: rgb(39, 38, 38);
+    font-size: 2em;
+}
+
+.currentNumber {
+    display: flex;
+    height: 67%;
+    padding-bottom: 2px;
+    font-size: 3em;
+}
+
+button {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-size: 2em;
+    font-family: monospace;
+    color: white;
+    background-color: gray;
+}
+.clear {
+    background-color: rgb(73, 73, 73);
+}
+
+.operator {
+    background-color: orange;
+}
